@@ -16,7 +16,7 @@ class IndexController extends \core\Controller{
          * 知乎发现首页
          */
         $curl = new Curl('https://www.baidu.com');
-        $cookie = 'q_c1=820a23155b7c4337bbfe54acf8773b21|1451283378000|1451283378000; _za=a13ca887-021b-45da-88fe-c1b63982374b; _xsrf=33bdad31147bf00b064b50ec10f9976a; cap_id="NGVjMGYzMDIwNzlkNDVlYmE2NzZhNjQ1MzEyZGE1MDQ=|1451377826|61acc755db19be73bdcacd852fa1a97a1c8b6821"; z_c0="QUJEQ1p2REhLZ2dYQUFBQVlRSlZUYmZScVZhXzdNbl9MczFjd081Z3hQSjJHY0RoWG5GMmpRPT0=|1451377847|76fdc816777745015b2c1250b0a2fd190cefa84a"; __utma=51854390.1352335625.1451283386.1451351537.1451368990.3; __utmc=51854390; __utmz=51854390.1451351537.2.2.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided); __utmv=51854390.100--|2=registration_date=20150601=1^3=entry_date=20150601=1';
+        $cookie = 'a23155b7c4337bbfe54acf8773b21|1451283378000|1451283378000; _za=a13ca887-021b-45da-88fe-c1b63982374b; _xsrf=33bdad31147bf00b064b50ec10f9976a; cap_id="NGVjMGYzMDIwNzlkNDVlYmE2NzZhNjQ1MzEyZGE1MDQ=|1451377826|61acc755db19be73bdcacd852fa1a97a1c8b6821"; z_c0="QUJEQ1p2REhLZ2dYQUFBQVlRSlZUYmZScVZhXzdNbl9MczFjd081Z3hQSjJHY0RoWG5GMmpRPT0=|1451377847|76fdc816777745015b2c1250b0a2fd190cefa84a"; __utma=51854390.1352335625.1451283386.1451351537.1451368990.3; __utmc=51854390; __utmz=51854390.1451351537.2.2.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided); __utmv=51854390.100--|2=registration_date=20150601=1^3=entry_date=20150601=1';
         $curl->getMethod($cookie);
         $zhihuContent = $curl->exec();
         print_r($curl->getResponseData());
